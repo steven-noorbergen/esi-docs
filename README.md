@@ -38,6 +38,11 @@ source .venv/bin/activate
 When you are starting a new terminal session, you will need to activate the virtual environment again.
 You can do this by navigating to the project directory and running the `source .venv/bin/activate` command.
 
+Using make:
+```bash
+make init
+```
+
 ### Installing dependencies
 
 Now that you have a virtual environment set up, you can install the dependencies for this project.
@@ -59,6 +64,11 @@ mkdocs serve
 This will start a local webserver that you can access by navigating to `http://127.0.0.1:8000/docs/` in your browser.
 
 You can close the server by pressing `Ctrl+C` in the terminal.
+
+Using make:
+```bash
+make serve
+```
 
 ### Making changes
 
