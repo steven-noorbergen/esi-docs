@@ -1,5 +1,5 @@
 site_name: Documentation
-site_url: https://developers.ccpeveweb.com/docs/
+site_url: https://developers.eveonline.com/docs/
 
 repo_url: https://github.com/esi/esi-docs
 repo_name: esi/esi-docs
@@ -7,7 +7,14 @@ edit_uri: edit/main/docs/
 
 nav:
   - Index: index.md
-
+  - Services:
+    - "ESI": services/esi/index.md
+    - "Image Server": services/image-server/index.md
+    - "Single-Sign-On": services/sso/index.md
+  - "Guides and Examples": guides/index.md
+  - Community: community/index.md
+not_in_nav: |
+  community/*/index.md
 
 theme:
   name: material
@@ -18,11 +25,17 @@ theme:
   font:
     code: Noto Sans
   features:
+    - content.tooltips
+    - content.tabs.link
+    - navigation.expand
     - navigation.instant
     - navigation.instant.progress
+    - navigation.path
     - navigation.tracking
     - search.suggest
     - search.highlight
+    - toc.follow
+    - toc.integrate
 
 extra_css:
   - assets/stylesheet/theme.css
@@ -31,7 +44,7 @@ extra_javascript:
   - assets/javascript/theme.js
 
 extra:
-  homepage: https://developers.ccpeveweb.com/
+  homepage: https://developers.eveonline.com/
 
 plugins:
   - search
@@ -40,6 +53,8 @@ plugins:
   - privacy
 
 markdown_extensions:
+  - abbr
+  - admonition
   - attr_list
   - md_in_html
   - pymdownx.emoji:
@@ -58,3 +73,4 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
+  - tables
