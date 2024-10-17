@@ -6,13 +6,18 @@ repo_name: esi/esi-docs
 edit_uri: edit/main/docs/
 
 nav:
-  - Index: index.md
+  - "Home": 
+    - Welcome: index.md
+    - Resources: resources/index.md
   - Services:
     - "ESI": services/esi/index.md
     - "Image Server": services/image-server/index.md
+    - "Static Data Export": services/sde/index.md
     - "Single-Sign-On": services/sso/index.md
   - "Guides and Examples": guides/index.md
-  - Community: community/index.md
+  - Community:
+    - "Support / Social": community/social-and-support.md
+    - "Community Services": community/community-services.md
 not_in_nav: |
   community/*/index.md
 
@@ -31,6 +36,7 @@ theme:
     - navigation.instant
     - navigation.instant.progress
     - navigation.path
+    - navigation.tabs
     - navigation.tracking
     - search.suggest
     - search.highlight

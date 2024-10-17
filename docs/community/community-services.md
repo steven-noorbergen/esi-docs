@@ -6,9 +6,9 @@
     Please note that the table below contains a list of community services that are not officially supported by CCP Games. We acknowledge the hard work and dedication of the developers who have created these services and give them a soapbox to promote their services. However, we do not endorse or guarantee the services listed below. If you have any questions or concerns about a service listed below, please contact the service creator directly.
 
 
-| Service Name                                        | Creator                           |
-| --------------------------------------------------- | --------------------------------- |
-| [Sample Service](./sample-service/index.md)         | Developer McDeveloperface         |
+| Service Name                                        | Creator                                                                                             |
+| --------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| [Sample Service](./sample-service/index.md)         | [:octicons-mark-github-16: Developer McDeveloperface](https://github.com/@your-username-here)       |
 
 
 # Submitting a Service
