@@ -1,8 +1,8 @@
 site_name: Documentation
-site_url: https://developers.eveonline.com/docs/
+site_url: !ENV [SITE_URL, 'https://developers.eveonline.com/docs/']
 
-repo_url: https://github.com/esi/esi-docs
-repo_name: esi/esi-docs
+repo_url: !ENV [GITHUB_REPO_URL, 'https://github.com/esi/esi-docs']
+repo_name: !ENV [GITHUB_REPOSITORY, 'esi/esi-docs']
 edit_uri: edit/main/docs/
 
 nav:
@@ -50,7 +50,7 @@ extra_javascript:
   - assets/javascript/theme.js
 
 extra:
-  homepage: https://developers.eveonline.com/
+  homepage: !ENV [SITE_HOME, 'https://developers.eveonline.com/']
 
 plugins:
   - search
